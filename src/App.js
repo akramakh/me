@@ -17,6 +17,7 @@ import './App.css';
 const App = () => {
 
   const [activePage, setActivePage] = useState('about');
+  const [mobSidebarVisible, setMobSidebarVisible] = useState(false);
 
   const renderActivePage = () => {
     if (activePage === 'about') {
@@ -1011,7 +1012,7 @@ const App = () => {
   return (
     <main>
 
-    <aside className="sidebar" data-sidebar>
+    <aside className={`sidebar ${mobSidebarVisible ? 'active' : ''}`} data-sidebar>
 
       <div className="sidebar-info">
 
@@ -1025,10 +1026,9 @@ const App = () => {
           <p className="title">Software Engineer</p>
         </div>
 
-        <button className="info_more-btn" data-sidebar-btn>
+        <button className="info_more-btn" onClick={() => setMobSidebarVisible(!mobSidebarVisible)}>
           <span>Show Contacts</span>
-
-          {/* <ion-icon name="chevron-down"></ion-icon> */}
+          <FaChevronDown />
         </button>
 
       </div>
