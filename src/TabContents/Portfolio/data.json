@@ -1,0 +1,68 @@
+{
+    "title": "Portfolio",
+    "filters": [
+        {
+            "key": "all",
+            "label": "All"
+        },
+        {
+            "key": "Web design",
+            "label": "Web design"
+        },
+        {
+            "key": "Applications",
+            "label": "Applications"
+        },
+        {
+            "key": "Web development",
+            "label": "Web development"
+        }
+    ],
+    "items": [
+        {
+            "key": "portfolio1",
+            "title": "Finance",
+            "category": "Web development"
+        },
+        {
+            "key": "portfolio2",
+            "title": "Orizon",
+            "category": "Web development"
+        },
+        {
+            "key": "portfolio3",
+            "title": "Fundo",
+            "category": "Web design"
+        },
+        {
+            "key": "portfolio4",
+            "title": "Brawlhalla",
+            "category": "Applications"
+        },
+        {
+            "key": "portfolio5",
+            "title": "DSM.",
+            "category": "Web design"
+        },
+        {
+            "key": "portfolio6",
+            "title": "MetaSpark",
+            "category": "Web design"
+        },
+        {
+            "key": "portfolio7",
+            "title": "Summary",
+            "category": "Web development"
+        },
+        {
+            "key": "portfolio8",
+            "title": "Task Manager",
+            "category": "Applications"
+        },
+        {
+            "key": "portfolio9",
+            "title": "Arrival",
+            "category": "Web development"
+        } 
+    ]
+}

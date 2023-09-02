@@ -1,0 +1,86 @@
+{
+    "title": "About",
+    "services": {
+        "title": "What i'm doing",
+        "items": [
+            {
+                "key": "web-design",
+                "title": "Web design",
+                "description": "The most modern and high-quality design made at a professional level."
+            },
+            {
+                "key": "web-development",
+                "title": "Web development",
+                "description": "High-quality development of sites at the professional level."
+            },
+            {
+                "key": "mobile-apps",
+                "title": "Mobile apps",
+                "description": "Professional development of applications for iOS and Android."
+            },
+            {
+                "key": "photography",
+                "title": "Photography",
+                "description": "I make high-quality photos of any category at a professional level."
+            }
+        ]
+    },
+    "testimonials": {
+        "title": "Testimonials",
+        "items": [
+            {
+                "key": "user1",
+                "name": "Daniel lewis",
+                "time": "2023-02-23",
+                "message": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has alot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscingelit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+            },
+            {
+                "key": "user2",
+                "name": "Jessica miller",
+                "time": "2023-02-23",
+                "message": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididtconsectetur adipiscingelit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+            },
+            {
+                "key": "user3",
+                "name": "Emily evans",
+                "time": "2023-02-23",
+                "message": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididtconsectetur adipiscingelit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+            },
+            {
+                "key": "user4",
+                "name": "Henry william",
+                "time": "2023-02-23",
+                "message": "Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididtconsectetur adipiscingelit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia."
+            }
+        ]
+    },
+    "clients": {
+        "title": "Clients",
+        "items": [
+            {
+                "key": "client1",
+                "link": "#"
+            },
+            {
+                "key": "client2",
+                "link": "#"
+            },
+            {
+                "key": "client3",
+                "link": "#"
+            },
+            {
+                "key": "client4",
+                "link": "#"
+            },
+            {
+                "key": "client5",
+                "link": "#"
+            },
+            {
+                "key": "client6",
+                "link": "#"
+            }
+        ]
+    }
+}

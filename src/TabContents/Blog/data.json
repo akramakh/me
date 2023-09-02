@@ -1,0 +1,47 @@
+{
+    "title": "Blog",
+    "items": [
+        {
+            "key": "blog1",
+            "title": "Design conferences in 2022",
+            "description": "Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.",
+            "time": "2022-02-23",
+            "category": "Design"
+        },
+        {
+            "key": "blog2",
+            "title": "Best fonts every designer",
+            "description": "Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.",
+            "time": "2022-02-23",
+            "category": "Design"
+        },
+        {
+            "key": "blog3",
+            "title": "Design digest #80",
+            "description": "Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.",
+            "time": "2022-02-23",
+            "category": "Design"
+        },
+        {
+            "key": "blog4",
+            "title": "UI interactions of the week",
+            "description": "Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.",
+            "time": "2022-02-23",
+            "category": "Design"
+        },
+        {
+            "key": "blog5",
+            "title": "The forgotten art of spacing",
+            "description": "Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "time": "2022-02-23",
+            "category": "Design"
+        },
+        {
+            "key": "blog6",
+            "title": "Design digest #79",
+            "description": "Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.",
+            "time": "2022-02-23",
+            "category": "Design"
+        }
+    ]
+}

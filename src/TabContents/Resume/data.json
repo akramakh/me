@@ -1,0 +1,64 @@
+{
+    "title": "Resume",
+    "education": {
+        "title": "Education",
+        "items": [
+            {
+                "key": "AUG",
+                "university": "Al Azhar University of Gaza",
+                "period": "2015 — 2020",
+                "description": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores etquas molestias exceptur."
+            },
+            {
+                "key": "ny-art",
+                "university": "New york academy of art",
+                "period": "2013 — 2015",
+                "description": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis."
+            }
+        ]
+    },
+    "experience": {
+        "title": "Experience",
+        "items": [
+            {
+                "key": "osp",
+                "position": "Full-stack Web Developor",
+                "company": "OpenScreenplay Inc.",
+                "period": "2019 — Present",
+                "description": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores etquas molestias exceptur."
+            },
+            {
+                "key": "xyz",
+                "position": "Fornt-end Engineer",
+                "company": "XYZ Co.",
+                "period": "2020 — 2021",
+                "description": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis."
+            }
+        ]
+    },
+    "skills": {
+        "title": "My Skills",
+        "items": [
+            {
+                "key": "web-design",
+                "title": "Web Design",
+                "percent": "80"
+            },
+            {
+                "key": "system-design",
+                "title": "System Design",
+                "percent": "85"
+            },
+            {
+                "key": "web-development",
+                "title": "Web Development",
+                "percent": "90"
+            },
+            {
+                "key": "problem-solving",
+                "title": "Problem Solving",
+                "percent": "85"
+            }
+        ]
+    }
+}
