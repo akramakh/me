@@ -61,10 +61,10 @@ const App = () => {
         key: 'portfolio',
         lable: 'Portfolio',
       },
-      {
-        key: 'blog',
-        lable: 'Blog',
-      },
+      // {
+      //   key: 'blog',
+      //   lable: 'Blog',
+      // },
       {
         key: 'contact',
         lable: 'Contact',
@@ -84,6 +84,9 @@ const App = () => {
       <nav className="navbar">
         <ul className="navbar-list">
           {data}
+          <li className="navbar-item" key='hire-me'>
+            <button className={`navbar-link action`} onClick={() => {}}>Hire Me</button>
+          </li>
         </ul>
       </nav>
     )

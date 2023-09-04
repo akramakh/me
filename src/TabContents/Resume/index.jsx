@@ -1,7 +1,8 @@
 import React from 'react';
 import { 
-    FaGraduationCap, FaCertificate,
+    FaGraduationCap, FaCertificate, FaUserGraduate, FaCloudDownloadAlt,
 } from 'react-icons/fa';
+import { ResumeFile } from '../../assets';
 import Data from './data.json';
 
 export default function Resume() {
@@ -11,7 +12,7 @@ export default function Resume() {
       <li className="timeline-item" key={item.key}>
         <h4 className="h4 timeline-item-title">{item.university}</h4>
         <span>{item.period}</span>
-        <p className="timeline-text">{item.description}</p>
+        <p className="timeline-text">{item.description} <strong>(Degree: {item.grade})</strong></p>
       </li>
     )
   }
@@ -21,7 +22,22 @@ export default function Resume() {
       <li className="timeline-item" key={item.key}>
         <h4 className="h4 timeline-item-title">{item.position}</h4>
         <span>{item.period}</span>
-        <p className="timeline-text">{item.description}</p>
+        {
+          item.description_type === 'html' ? (
+            <div className="timeline-description" dangerouslySetInnerHTML={{__html: item.description}} />
+          ) : (
+            <p className="timeline-text">{item.description}</p>
+          )
+        }
+      </li>
+    )
+  }
+
+  const renderCourseItem = (item) => {
+    return (
+      <li className="timeline-item" key={item.key}>
+        <h4 className="h4 timeline-item-title">{item.title}<p className="tag">{item.type}</p></h4>
+        <span>{item.period}</span>
       </li>
     )
   }
@@ -44,7 +60,13 @@ export default function Resume() {
     <article className="resume" >
 
         <header>
-          <h2 className="h2 article-title">{Data.title}</h2>
+          <h2 className="h2 article-title">
+            {Data.title}
+            <a className="icon-box icon-btn" href={ResumeFile} target='_blank'>
+              <FaCloudDownloadAlt />
+              <span>Download</span>
+            </a>
+          </h2>
         </header>
 
         <section className="timeline">
@@ -69,7 +91,18 @@ export default function Resume() {
           <ol className="timeline-list">
             {Data.experience.items.map(item => renderExperienceItem(item))}
           </ol>
+        </section>
 
+        <section className="timeline">
+          <div className="title-wrapper">
+            <div className="icon-box">
+              <FaUserGraduate />
+            </div>
+            <h3 className="h3">{Data.courses.title}</h3>
+          </div>
+          <ol className="timeline-list">
+            {Data.courses.items.map(item => renderCourseItem(item))}
+          </ol>
         </section>
 
         <section className="skill">
@@ -77,7 +110,6 @@ export default function Resume() {
           <ul className="skills-list content-card">
             {Data.skills.items.map(item => renderSkillItem(item))}
           </ul>
-
         </section>
 
     </article>

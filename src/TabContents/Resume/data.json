@@ -1,5 +1,6 @@
 {
     "title": "Resume",
+    "filePath": "../../assets//Akram's Resume.pdf",
     "education": {
         "title": "Education",
         "items": [
@@ -7,13 +8,8 @@
                 "key": "AUG",
                 "university": "Al Azhar University of Gaza",
                 "period": "2015 — 2020",
-                "description": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores etquas molestias exceptur."
-            },
-            {
-                "key": "ny-art",
-                "university": "New york academy of art",
-                "period": "2013 — 2015",
-                "description": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis."
+                "description": "B.A., Computer Scince Engineering.",
+                "grade": "89.6%"
             }
         ]
     },
@@ -22,17 +18,104 @@
         "items": [
             {
                 "key": "osp",
-                "position": "Full-stack Web Developor",
+                "position": "Full Stack React-JS Developer",
                 "company": "OpenScreenplay Inc.",
                 "period": "2019 — Present",
-                "description": "Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores etquas molestias exceptur."
+                "description_type": "html",
+                "description": "<p className=\"timeline-text\"><strong>Frontend developer</strong>: HTML5, CSS3, JavaScript, React-JS framework, NextJS, building reusable components, integrating with external Apps and APIs, and converting UI/UX wireframes into code.</p><p className=\"timeline-text\"><strong>Backend developer</strong>: Python – Django framework, Database management – MySQL, Platform's Payment System, REST framework, Test Driven Development, and Performance Enhancements & Code Refactoring.</p>"
             },
             {
-                "key": "xyz",
-                "position": "Fornt-end Engineer",
-                "company": "XYZ Co.",
-                "period": "2020 — 2021",
-                "description": "Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis."
+                "key": "freelance",
+                "position": "Freelancer",
+                "company": "Earth",
+                "period": "2019 — Present",
+                "description_type": "plaintext",
+                "description": "A highly motivated and experienced Freelance Web Developer with a passion for software development. A strong technical background combined with excellent problem-solving and communication skills make me an ideal candidate for any web development project."
+            },
+            {
+                "key": "mit",
+                "position": "Database & System Administration",
+                "company": "Ministry of Telecom. & IT",
+                "period": "2018 — 2019",
+                "description_type": "plaintext",
+                "description": "Responsible for Database Management, Backend Deveopment and Windows Server Coadministration."
+            }
+        ]
+    },
+    "courses": {
+        "title": "Courses",
+        "items": [
+            {
+                "key": "aws-cp",
+                "title": "AWS - Cloud Partitioner",
+                "type": "technical",
+                "period": "11/2022"
+            },
+            {
+                "key": "node-express",
+                "title": "Node.Js, Express Framework Development",
+                "type": "technical",
+                "period": "11/2021"
+            },
+            {
+                "key": "docker",
+                "title": "Docker Containerization & kubernetes",
+                "type": "technical",
+                "period": "06/2021"
+            },
+            {
+                "key": "dj-graphql",
+                "title": "GraphQL Technology [JS Apollo/Python Graphene]",
+                "type": "technical",
+                "period": "03/2021"
+            },
+            {
+                "key": "react",
+                "title": "React JS Framework",
+                "type": "technical",
+                "period": "09/2019"
+            },
+            {
+                "key": "django",
+                "title": "Python, Django Framework Development",
+                "type": "technical",
+                "period": "06/2019"
+            },
+            {
+                "key": "git",
+                "title": "Git and Versioning Control systems",
+                "type": "technical",
+                "period": "05/2019"
+            },
+            {
+                "key": "AoDF",
+                "title": "The Art of Dialogue and Facilitation",
+                "type": "training",
+                "period": "10/2018"
+            },
+            {
+                "key": "uxui",
+                "title": "UX/UX Design",
+                "type": "technical",
+                "period": "01/2018"
+            },
+            {
+                "key": "FS&QoCL",
+                "title": "Fundamental Skills and Qualities of Civic Leadership",
+                "type": "training",
+                "period": "10/2017"
+            },
+            {
+                "key": "C&PS",
+                "title": "Communications and Presentation Skills",
+                "type": "training",
+                "period": "06/2017"
+            },
+            {
+                "key": "forntend",
+                "title": "Fronten Web Development",
+                "type": "technical",
+                "period": "05/2015"
             }
         ]
     },
@@ -40,19 +123,19 @@
         "title": "My Skills",
         "items": [
             {
-                "key": "web-design",
-                "title": "Web Design",
-                "percent": "80"
+                "key": "forntend",
+                "title": "Fronten Web Development",
+                "percent": "90"
+            },
+            {
+                "key": "backend",
+                "title": "Backend Web Development",
+                "percent": "90"
             },
             {
                 "key": "system-design",
                 "title": "System Design",
-                "percent": "85"
-            },
-            {
-                "key": "web-development",
-                "title": "Web Development",
-                "percent": "90"
+                "percent": "80"
             },
             {
                 "key": "problem-solving",
