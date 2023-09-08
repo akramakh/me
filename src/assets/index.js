@@ -1,4 +1,6 @@
 export {default as MyAvatar} from './my-avatar.png';
+export {default as MyAvatarLabtop} from './my-avatar-labtop.PNG';
+
 export {default as Avatar1} from './avatar-1.png';
 export {default as Avatar2} from './avatar-2.png';
 export {default as Avatar3} from './avatar-3.png';
@@ -26,6 +28,7 @@ export {default as Project7} from './project-7.png';
 export {default as Project8} from './project-8.jpg';
 export {default as Project9} from './project-9.png';
 export {default as IconApp} from './icon-app.svg';
+export {default as IconProblemSolving} from './probelm-solving.svg';
 export {default as IconDesign} from './icon-design.svg';
 export {default as IconDev} from './icon-dev.svg';
 export {default as IconPhoto} from './icon-photo.svg';

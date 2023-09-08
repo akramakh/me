@@ -10,12 +10,14 @@ import {
 import {
   AboutTabContent, ResumeTabContent, PortfolioTabContent, BlogTabContent, ContactTabContent,
 } from './TabContents';
+import { HirePopup } from './components';
 import './App.css';
 
 const App = () => {
 
   const [activePage, setActivePage] = useState('about');
   const [mobSidebarVisible, setMobSidebarVisible] = useState(false);
+  const [hierPopupVisible, setHierPopupVisible] = useState(false);
 
   useEffect(() => {
     if (window) {
@@ -85,7 +87,7 @@ const App = () => {
         <ul className="navbar-list">
           {data}
           <li className="navbar-item" key='hire-me'>
-            <button className={`navbar-link action`} onClick={() => {}}>Hire Me</button>
+            <button className={`navbar-link action`} onClick={() => setHierPopupVisible(true)}>Hire Me</button>
           </li>
         </ul>
       </nav>
@@ -227,6 +229,11 @@ const App = () => {
       {renderActivePage()}
 
     </div>
+
+    <HirePopup
+      visible={hierPopupVisible}
+      onOk={() => setHierPopupVisible(false)}
+    />
 
   </main>
   )

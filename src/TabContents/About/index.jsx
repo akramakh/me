@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { 
     Avatar1, Avatar2, Avatar3, Avatar4, 
     LogoColor1, LogoColor2, LogoColor3, LogoColor4, LogoColor5, LogoColor6, 
-    IconApp, IconDesign, IconDev, IconPhoto, IconQuote 
+    IconApp, IconDesign, IconDev, IconPhoto, IconQuote, IconProblemSolving,
 } from '../../assets';
 import { FaTimes } from 'react-icons/fa';
 import Data from './data.json';
@@ -11,6 +11,7 @@ const ServiceImages = {
     'web-design': IconDesign,
     'web-development': IconDev,
     'mobile-apps': IconApp,
+    'problem-solving': IconProblemSolving,
     'photography': IconPhoto,
 };
 
@@ -51,8 +52,8 @@ export default function About() {
         if (!popupVisible) return null;
         return (
             <div className="modal-container active">
-                <div className="overlay" onClick={closePopup}></div>
-                <section className="testimonials-modal">
+                <div className="overlay active" onClick={closePopup} />
+                <section className="modal-body">
                     <button className="modal-close-btn" onClick={closePopup}>
                         <FaTimes />
                     </button>

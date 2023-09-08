@@ -4,19 +4,19 @@
         "title": "What i'm doing",
         "items": [
             {
-                "key": "web-design",
-                "title": "Systems design",
-                "description": "The most modern and high-quality design made at a professional level."
-            },
-            {
                 "key": "web-development",
                 "title": "Web development",
                 "description": "High-quality development of sites at the professional level."
             },
             {
-                "key": "mobile-apps",
-                "title": "Mobile apps",
-                "description": "Professional development of applications for iOS and Android."
+                "key": "web-design",
+                "title": "Systems design",
+                "description": "The most modern and high-quality design made at a professional level."
+            },
+            {
+                "key": "problem-solving",
+                "title": "Problem Solving",
+                "description": "Professional and Top level techniques in solving business problems"
             },
             {
                 "key": "photography",
