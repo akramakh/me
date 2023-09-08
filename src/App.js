@@ -233,6 +233,7 @@ const App = () => {
     <HirePopup
       visible={hierPopupVisible}
       onOk={() => setHierPopupVisible(false)}
+      goToTab={(tab) => setActivePage(tab)}
     />
 
   </main>

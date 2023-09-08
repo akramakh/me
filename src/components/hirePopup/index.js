@@ -5,7 +5,7 @@ import './style.css';
 import Data from './data.json';
 
 export default function HirePopup(props) {
-  const {visible = false, onOk = () => {}} = props;
+  const {visible = false, onOk = () => {}, goToTab = () => {}} = props;
 
   const renderFooterButtons = () => {
     const data = Data.freelance.links.map((btn) => {
@@ -17,7 +17,7 @@ export default function HirePopup(props) {
         </button>
       );
     });
-    return <>{data}</>;
+    return <div className='buttons'>{data}</div>;
   };
 
   return (
@@ -32,9 +32,19 @@ export default function HirePopup(props) {
             <img src={MyAvatarLabtop} alt="Logo" />
           </div>
           <h1>{Data.title}</h1>
+          <p>{Data.description}</p>
         </div>
         <div className='footer'>
           {renderFooterButtons()}
+          <p>
+          {Data.contctText} 
+          <span 
+            className='link' 
+            onClick={() => { 
+              goToTab('contact');
+              onOk();
+            }}
+          >here.</span></p>
         </div>
       </section>
     </div>
