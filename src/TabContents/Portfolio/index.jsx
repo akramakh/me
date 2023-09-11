@@ -77,9 +77,9 @@ export default function Protfolio() {
       <li className={`project-item`} key={item.key}>
         <a href="#">
           <figure className="project-img">
-            <div className="project-item-icon-box">
+            {/* <div className="project-item-icon-box">
               <FaRegEye />
-            </div>
+            </div> */}
             <img src={Images[item.key]} alt={item.title} loading="lazy" />
           </figure>
           <h3 className="project-title">{item.title}</h3>

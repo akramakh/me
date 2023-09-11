@@ -20,6 +20,7 @@ const App = () => {
   const [hierPopupVisible, setHierPopupVisible] = useState(false);
 
   useEffect(() => {
+    setMobSidebarVisible(false);
     if (window) {
       window.scrollTo(0, 0);
     }

@@ -1289,7 +1289,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+/* .project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); } */
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1509,6 +1509,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   box-shadow: var(--shadow-3);
   z-index: 1;
   transition: var(--transition-1);
+  overflow: hidden;
 }
 
 .form-btn::before {

@@ -17,7 +17,7 @@
   overflow: hidden;
   display: flex;
   width: 100%;
-  max-width: 520px;
+  max-width: 580px;
   gap: 8px;
   flex-direction: column;
 }
@@ -49,6 +49,9 @@
   font-weight: 500;
   color: var(--vegas-gold);
   padding-bottom: 8px;
+  padding-top: 16px;
+  text-transform: none;
+  font-size: 1.2em;
 }
 .hire-popup .modal-content-container p {
   text-align: center;
@@ -78,18 +81,22 @@
   border: none;
   flex-wrap: wrap;
 }
-.hire-popup .footer button {
+.hire-popup .footer button.form-btn {
   padding: 8px 16px;
   border: none;
   border-radius: 8px;
   color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  flex: 0 1 20%;
+  flex: 0 1 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
+}
+.hire-popup .footer button.form-btn::before {
+  transition: none;
+  /* background: unset; */
 }
 .hire-popup .footer button a {
   font-size: .9em;
@@ -157,6 +164,10 @@
     height: 100px;
   }
   .hire-popup .modal-content-container h1 {
-    font-size: 1.3em;
+    padding-top: 12px;
+    font-size: .9em;
+  }
+  .hire-popup .modal-content-container p {
+    font-size: .8em;
   }
 }

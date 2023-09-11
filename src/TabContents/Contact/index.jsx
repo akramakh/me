@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import emailjs from 'emailjs-com';
 import { FaPaperPlane, FaTimes } from 'react-icons/fa';
+import { Loader } from '../../components';
 import Data from './data.json';
 
 export default function Contact() {
@@ -8,12 +9,15 @@ export default function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [alert, setAlert] = useState({});
+    const [mapLoading, setMapLoading] = useState(true);
+    const [btnLoading, setBtnLoading] = useState(false);
     const WebsiteLink = window ? window.location.href : 'https://github.com/akramakh/me';
     
-    const btnDisabled = useMemo(() => !(name && name.trim() && email && email.trim() && message && message.trim()), [name, email, message]);
+    const btnDisabled = useMemo(() => btnLoading || !(name && name.trim() && email && email.trim() && message && message.trim()), [name, email, message]);
     
     const handleOnSubmit = (e) => {
         e.preventDefault();
+        setBtnLoading(true);
         setAlert({});
         emailjs.sendForm(
             Data.emailJsConfig.SERVICE_ID, 
@@ -21,9 +25,11 @@ export default function Contact() {
             e.target, 
             Data.emailJsConfig.PUBLIC_KEY
         ).then((result) => {
-            setAlert(Data.form.alerts.success);
+                setAlert(Data.form.alerts.success);
+                setBtnLoading(false);
         }, (error) => {
             setAlert(Data.form.alerts.error);
+            setBtnLoading(false);
         });
         e.target.reset();
         setName('');
@@ -51,10 +57,14 @@ export default function Contact() {
             </header>
 
             <section className="mapbox" data-mapbox>
+                {mapLoading ? (
+                    <Loader />
+                ) : null}
                 <figure>
                     <iframe 
                         src={Data.map.url} 
                         width="400" height="300" loading="lazy"
+                        onLoad={() => setMapLoading(false)}
                     ></iframe>
                 </figure>
             </section>
@@ -105,6 +115,7 @@ export default function Contact() {
                         value={WebsiteLink}
                     />
                     <button className="form-btn" type="submit" disabled={btnDisabled}>
+                        {btnLoading ? <Loader size='small' /> : null}
                         <span>{Data.form.action.label}</span>
                         <FaPaperPlane />
                     </button>
