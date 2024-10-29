@@ -1,0 +1,33 @@
+{
+    "title": "Let's make your digital vision a reality!",
+    "description": "With a passion for problem-solving and years of experience in web development, I'm here to bring your vision to life. Let's collaborate and create something amazing together!",
+    "contctText": "Or, you can contact me",
+    "freelance": {
+        "links": [
+            {
+                "key": "upwork",
+                "label": "UpWork",
+                "link": "https://www.upwork.com/freelancers/~01417c7b320a55e6cf",
+                "class": "form-btn btn-upwork"
+            },
+            {
+                "key": "freelancer",
+                "label": "Freelancer",
+                "link": "https://www.freelancer.com/u/akramakh",
+                "class": "form-btn btn-freelancer"
+            },
+            {
+                "key": "mostaql",
+                "label": "Mostaql",
+                "link": "https://mostaql.com/u/akramabukhousa",
+                "class": "form-btn btn-mostaql"
+            },
+            {
+                "key": "pph",
+                "label": "People per hour",
+                "link": "#",
+                "class": "form-btn btn-pph"
+            }
+        ]
+    }
+}

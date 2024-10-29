@@ -1,0 +1,181 @@
+.preview-popup ::-webkit-scrollbar-track {
+  -webkit-box-shadow: unset;
+  background-color: transparent;
+  border-radius: 5px;
+}
+.preview-popup ::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+  border-radius: 7px;
+}
+.preview-popup ::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.preview-popup .modal-body {
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  max-width: calc(100vw - 16px);
+  max-height: calc(100vh - 16px);
+  gap: 8px;
+  flex-direction: column;
+  margin: 0;
+}
+.preview-popup.active.modal-container {
+  padding: 8px;
+}
+.preview-popup .modal-content-container {
+  max-height: calc(100% - 100px);
+  max-width: calc(100% - 20px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.preview-popup .modal-content-container .img-container {
+  width: auto;
+  height: auto;
+  margin: 0;
+  border: none;
+  padding: 0;
+  border-radius: .4rem;
+}
+.preview-popup .modal-content-container .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: var(--bg-gradient-yellow-2);
+  border-radius: inherit;
+}
+.preview-popup .modal-header {
+  padding-block-end: 40px;
+}
+.preview-popup .modal-header h1 {
+  margin: auto;
+  font-weight: 500;
+  color: var(--vegas-gold);
+  text-transform: none;
+  font-size: 1.2em;
+}
+.preview-popup .modal-content-container p {
+  text-align: center;
+  text-overflow: clip;
+  width: 100%;
+  display: block;
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+}
+.preview-popup .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  border: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.preview-popup .footer .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+  border: none;
+  flex-wrap: wrap;
+}
+.preview-popup .footer button.form-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  flex: 0 1 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.preview-popup .footer button.form-btn::before {
+  transition: none;
+  /* background: unset; */
+}
+.preview-popup .footer button a {
+  font-size: .9em;
+  white-space: nowrap;
+  color: var(--orange-yellow-crayola);
+}
+/* .preview-popup .footer button.btn-upwork {
+  background: #59c024;
+}
+.preview-popup .footer button.btn-freelancer {
+  background: #3396eb;
+}
+.preview-popup .footer button.btn-mostaql {
+  background: #2386c8;
+} */
+.preview-popup .footer button.btn-pph {
+  background: #eb8126;
+  display: none;
+}
+.preview-popup .footer button:hover {
+  opacity: 0.8;
+}
+.preview-popup .footer p {
+  text-align: center;
+  text-overflow: clip;
+  width: 100%;
+  display: block;
+  color: var(--light-gray);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.preview-popup .footer p span {
+  color: var(--orange-yellow-crayola);
+  font-weight: var(--fw-500);
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+@media (max-width: 787px) {
+  .preview-popup {
+    /* padding: 16px; */
+    max-width: 100%;
+ }
+}
+@media (max-width: 425px) {
+  .preview-popup {
+    /* max-width: 96%; */
+    
+ }
+  .preview-popup .modal-body {
+    padding-inline: 16px;
+    
+ }
+  .preview-popup .modal-content-container .img-container {
+    /* width: 100px;
+    height: 100px; */
+  }
+  .preview-popup .modal-content-container h1 {
+    padding-top: 12px;
+    font-size: .9em;
+  }
+  .preview-popup .modal-content-container p {
+    font-size: .8em;
+  }
+}
