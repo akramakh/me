@@ -20,6 +20,16 @@
     ],
     "items": [
         {
+            "key": "fitfusion-club",
+            "title": "FitFusion Club",
+            "category": "Web development"
+        },
+        {
+            "key": "election-campaign",
+            "title": "Election campaign",
+            "category": "Web development"
+        },
+        {
             "key": "portfolio1",
             "title": "Finance",
             "category": "Web development"

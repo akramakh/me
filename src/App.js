@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { 
   FaFacebook, FaInstagram, FaGithub, FaTwitter,
   FaMobileAlt, FaRegEnvelope, FaRegCalendarAlt, FaMapMarkerAlt,
-  FaChevronDown, FaLinkedin,
+  FaChevronDown, FaLinkedin, FaCheckCircle,
 } from 'react-icons/fa'
 import { 
   MyAvatar,
@@ -109,7 +109,7 @@ const App = () => {
         <div className="info-content">
           <h1 className="name" title="Akram AKh">Akram Khousa</h1>
 
-          <p className="title">Software Engineer</p>
+          <p className="title"><FaCheckCircle />Software Engineer</p>
         </div>
 
         <button className="info_more-btn" onClick={() => setMobSidebarVisible(!mobSidebarVisible)}>
