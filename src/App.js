@@ -6,6 +6,7 @@ import {
 } from 'react-icons/fa'
 import { 
   MyAvatar,
+  IconDarkLight,
 } from './assets';
 import {
   AboutTabContent, ResumeTabContent, PortfolioTabContent, BlogTabContent, ContactTabContent,
@@ -18,6 +19,7 @@ const App = () => {
   const [activePage, setActivePage] = useState('about');
   const [mobSidebarVisible, setMobSidebarVisible] = useState(false);
   const [hierPopupVisible, setHierPopupVisible] = useState(false);
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     setMobSidebarVisible(false);
@@ -27,6 +29,17 @@ const App = () => {
     return () => {
     }
   }, [activePage]);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+
+    console.log('theme :>> ', theme);
+  }, [theme])
+
+  const toggleDarkMode = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  }
+  
 
   const renderActivePage = () => {
     switch (activePage) {
@@ -90,6 +103,11 @@ const App = () => {
           <li className="navbar-item" key='hire-me'>
             <button className={`navbar-link action`} onClick={() => setHierPopupVisible(true)}>Hire Me</button>
           </li>
+          <li className="navbar-item" key='dark-light'>
+            <button className={`navbar-link dark-light`} onClick={() => toggleDarkMode()}>
+              <img src={IconDarkLight}alt={theme} width="20" />
+            </button>
+          </li>
         </ul>
       </nav>
     )
@@ -110,6 +128,7 @@ const App = () => {
           <h1 className="name" title="Akram AKh">Akram Khousa</h1>
 
           <p className="title"><FaCheckCircle />Software Engineer</p>
+          {/* <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>{theme}</button> */}
         </div>
 
         <button className="info_more-btn" onClick={() => setMobSidebarVisible(!mobSidebarVisible)}>
@@ -188,31 +207,31 @@ const App = () => {
         <ul className="social-list">
           
           <li className="social-item">
-            <a href="https://www.linkedin.com/in/akramabukhousa/" className="social-link">
+            <a target="_blank" href="https://www.linkedin.com/in/akramabukhousa/" className="social-link">
               <FaLinkedin />
             </a>
           </li>
           
           <li className="social-item">
-            <a href="https://www.github.com/akramakh" className="social-link">
+            <a target="_blank" href="https://www.github.com/akramakh" className="social-link">
               <FaGithub />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="https://www.facebook.com/AkramAbuKhousa" className="social-link">
+            <a target="_blank" href="https://www.facebook.com/AkramAbuKhousa" className="social-link">
               <FaFacebook />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="https://www.twitter.com/akram_a_kh" className="social-link">
+            <a target="_blank" href="https://www.twitter.com/akram_a_kh" className="social-link">
               <FaTwitter />
             </a>
           </li>
 
           <li className="social-item">
-            <a href="https://www.instagram.com/akram.akh" className="social-link">
+            <a target="_blank" href="https://www.instagram.com/akram.akh" className="social-link">
               <FaInstagram />
             </a>
           </li>

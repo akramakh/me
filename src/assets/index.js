@@ -34,5 +34,6 @@ export {default as IconDev} from './icon-dev.svg';
 export {default as IconPhoto} from './icon-photo.svg';
 export {default as IconQuote} from './icon-quote.svg';
 export {default as IconHi} from './icon-hi.png';
+export {default as IconDarkLight} from './dark-light-icon.svg'
 
 export {default as ResumeFile} from './Akram\'s Resume.pdf';
