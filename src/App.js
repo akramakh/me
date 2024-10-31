@@ -19,7 +19,7 @@ const App = () => {
   const [activePage, setActivePage] = useState('about');
   const [mobSidebarVisible, setMobSidebarVisible] = useState(false);
   const [hierPopupVisible, setHierPopupVisible] = useState(false);
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     setMobSidebarVisible(false);
